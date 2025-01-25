@@ -44,3 +44,6 @@ class Context:
     
     def get_tree_level(self):
         return len(self.stack)
+    
+def github_test():
+    pass
