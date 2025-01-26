@@ -1,20 +1,6 @@
-import logging
+from nao_logger import get_nao_logger
 
-logger = logging.getLogger('context_manager')
-logger.setLevel(logging.DEBUG)
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-
-# Create console handler and set level
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)
-
-# Create file handler and set level
-file_handler = logging.FileHandler("log.log")
-file_handler.setLevel(logging.DEBUG)
-
-# Create file handler and set level
-logger.addHandler(console_handler)
-logger.addHandler(file_handler)
+logger = get_nao_logger('nao_context_manager')
 
 class Context:
 

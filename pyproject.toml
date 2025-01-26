@@ -1,6 +1,6 @@
 [project]
 name = "nao_context_manager"
-version = "0.1.1"
+version = "1.0.1"
 description = "A context manager for nao's use."
 readme = "README.md"
 license = { file = "LICENSE" }
